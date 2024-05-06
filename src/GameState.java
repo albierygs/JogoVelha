@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public enum GameState {
+public enum GameState {
+
+    CONTINUE, END
 }

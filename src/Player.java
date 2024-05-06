@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class Player {
+public record Player(String nome, Representation representation) {
+
 }

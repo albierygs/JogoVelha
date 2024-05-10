@@ -46,6 +46,7 @@ public class Main {
         velha.getTabuleiro();
 
         System.out.println("VENCEDOR(A): " + velha.getWinnerPlayer().nome().toUpperCase());
+        System.out.println("PARABÉNS!!!");
     }
 
     private static void playerMove(Player player, Velha velha) {

@@ -1,4 +1,4 @@
 public enum GameState {
 
-    CONTINUE, END
+    CONTINUE, VELHA, END
 }

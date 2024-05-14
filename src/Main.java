@@ -41,12 +41,16 @@ public class Main {
             }
 
             alternar = !alternar;
-        } while (velha.getGameState() != GameState.END);
+        } while (velha.getGameState() == GameState.CONTINUE);
 
         velha.getTabuleiro();
 
-        System.out.println("VENCEDOR(A): " + velha.getWinnerPlayer().nome().toUpperCase());
-        System.out.println("PARABÉNS!!!");
+        if (velha.getGameState() == GameState.END) {
+            System.out.println("VENCEDOR(A): " + velha.getWinnerPlayer().nome().toUpperCase() + "\nPARABÉNS!!!");
+        } else {
+            System.out.println("DEU VELHA!!");
+        }
+        System.out.println("FIM DE JOGO");
     }
 
     private static void playerMove(Player player, Velha velha) {
